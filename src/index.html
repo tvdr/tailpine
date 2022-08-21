@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tailwind - Alpine boilerplate</title>
+</head>
+<body>
+
+<main class="p-5 min-h-screen bg-slate-300">
+<div class="flex flex-col items-center" x-data="counter()">
+        <div id="counter_display" class="flex justify-center items-center w-16 h-16 mb-2 p-3 bg-red-500 text-white border-2 border-white rounded-full" x-text="count"></div>
+        <button class="bg-gray-400 text-black rounded-lg p-2 hover:shadow hover:bg-gray-500 hover:text-white" @click="increment()">Increment counter</button>
+</div>
+</main>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
